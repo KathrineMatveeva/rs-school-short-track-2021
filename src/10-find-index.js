@@ -14,8 +14,7 @@
 function findIndex(array, value) {
   let start = 0;
   let end = array.length - 1;
-  // eslint-disable-next-line no-constant-condition
-  while (true) {
+  for (;;) {
     const n = start + Math.round((end - start) / 2);
     if (array[n] === value) return n;
     if (array[n] < value) {
